@@ -52,7 +52,7 @@ metadata:
 spec:
  tls:
    - hosts:
-       - .lukflk.nl
+       - apptest1.lukflk.nl
      secretName: wildcard-lukflk
  rules:
    - host: apptest1.lukflk.nl

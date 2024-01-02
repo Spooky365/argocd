@@ -9,7 +9,7 @@ metadata:
   name: app-test-1-deploy
   namespace: app-test-1
 spec:
-  replicas: 1 
+  replicas: 2 
   selector:
     matchLabels: 
       app: app-test-1
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: app-test-1
-        image: nginx
+        image: docker pull skoopy365/webapp.py:latest
         ports:
         - name: web
           containerPort: 80
@@ -52,10 +52,10 @@ metadata:
 spec:
  tls:
    - hosts:
-       - apptest1.lukflk.nl
+       - webapppy.lukflk.nl
      secretName: wildcard-lukflk
  rules:
-   - host: apptest1.lukflk.nl
+   - host: webapppy.lukflk.nl
      http:
        paths:
          - path: /

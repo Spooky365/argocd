@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: app-test-1
-        image: skoopy365/webapp.py:0.1.RELEASE
+        image: skoopy365/webapp.py:c8c60b9737b96c5ed9222028e8e9a5e6b5684026
         ports:
         - name: web
           containerPort: 8000
